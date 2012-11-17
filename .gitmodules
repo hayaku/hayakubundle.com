@@ -1,0 +1,9 @@
+[submodule "bemto"]
+	path = bemto
+	url = git://github.com/kizu/bemto.git
+[submodule "stylus/if-ie_styl"]
+	path = stylus/if-ie_styl
+	url = git://github.com/kizu/if-ie.styl.git
+[submodule "stylus/utilus"]
+	path = stylus/utilus
+	url = git://github.com/kizu/utilus.styl.git

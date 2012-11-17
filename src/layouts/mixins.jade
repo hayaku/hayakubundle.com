@@ -1,0 +1,33 @@
+include ../../bemto/bemto
+
+mixin link(url)
+  +b('span').link(attributes, href=url)
+    block
+
+mixin icon
+  +b('span').ico(attributes)
+    block
+
+mixin page()
+  +b('html').page(attributes)
+    head
+      title= document.title
+      meta(charset="utf-8")
+      meta(name="viewport", content="width=device-width")
+      meta(http-equiv="X-UA-Compatible", content="IE=EmulateIE7,IE=edge")
+
+      //- Including docpad's stuff
+      != getBlock("meta").toHTML()
+
+      //- Fix Jade for it
+      <!--[if gt IE 7]><!-->
+      link(rel="stylesheet", href="/s/style.css")
+      <!--<![endif]-->
+
+      //if lt IE 8
+        link(rel="stylesheet", href="/s/style_ie.css")
+
+    body
+      block
+
+      != getBlock("scripts").toHTML()

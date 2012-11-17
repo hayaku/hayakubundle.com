@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World!11!1a
+title: Hello World!
 ---
 
 Hello **World!**

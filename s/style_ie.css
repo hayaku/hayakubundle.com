@@ -1,0 +1,235 @@
+.clearfix /**/ {
+  zoom: 1;
+}
+.isle {
+  padding: 24px;
+  zoom: 1;
+}
+.isle_s {
+  padding: 12px;
+}
+.isle_l {
+  padding: 48px;
+}
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
+body {
+  position: relative;
+  z-index: 1;
+  min-width: 30em;
+  height: 100%;
+  padding: 0 48px;
+  margin: 0;
+  color: #333;
+  background: #fff;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+.link {
+  cursor: pointer;
+  color: #0c56ff;
+}
+.link:hover {
+  color: #f00;
+}
+.link_wrapper {
+  display: inline;
+  zoom: 1;
+  white-space: nowrap;
+/* Would be a class for multiline links */
+  text-decoration: none;
+}
+.link_wrapper .ico {
+  margin-top: -4px;
+  vertical-align: middle;
+}
+.link__inner {
+  line-height: 1.1;
+  text-decoration: underline;
+}
+.link_pseudo,
+.link_pseudo.link_wrapper .link__inner {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+.link_pseudo.link_wrapper {
+  border-bottom: 0;
+}
+.link_text {
+  color: inherit;
+}
+body {
+  font: 100%/24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.text .link {
+  padding: 3.5999999999999996px 0;
+}
+.text p,
+.text ul,
+.text ol,
+.text dl,
+.text blockquote,
+.text hr,
+.text code,
+.text pre,
+.text table {
+  padding: 0;
+  margin: 0 0 24px;
+}
+.text li,
+.text li > p {
+  padding: 0;
+  margin: 0 0 12px;
+}
+.text H1,
+.text H2,
+.text H3,
+.text H4,
+.text H5,
+.text H6 {
+  padding: 0;
+  margin: 0 0 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+.text H1 {
+  font-size: 60px;
+  line-height: 72px;
+  padding-top: 12px;
+}
+.text H2 {
+  font-size: 48px;
+  line-height: 60px;
+}
+.text H3 {
+  font-size: 36px;
+  line-height: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.text H4,
+.text H5,
+.text H6 {
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 12px;
+}
+.fork {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.fork > .link {
+  display: block;
+  padding: 10px 40px;
+  margin: 2em 0 0 -3em;
+  font: bold 16px/1 Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: #fedbd9;
+}
+.fork > .link:hover {
+  background: #f40b00;
+}
+body {
+  overflow-x: hidden;
+}
+.debug body:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  display: block;
+  height: 9999px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.3)), color-stop(0.01, rgba(0,0,0,0.3)), color-stop(0, transparent), color-stop(0.24, transparent));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 1px, transparent 0, transparent 24px);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 1px, transparent 0, transparent 24px);
+  background: -o-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 1px, transparent 0, transparent 24px);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 1px, transparent 0, transparent 24px);
+  background: linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 1px, transparent 0, transparent 24px);
+  pointer-events: none;
+}
+.section {
+  position: relative;
+  z-index: 1;
+  width: 37em;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.section_features {
+  padding: 24px 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.section_features:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 2000px;
+  margin: 0 -2000px;
+  background: rgba(0,0,0,0.05);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+.header__i {
+  font-size: 120px;
+  line-height: 192px;
+}
+.header .link {
+  color: inherit;
+}
+.header .link:not(:hover) {
+  text-decoration: none;
+}
+ul.links {
+  margin: 24px 0;
+  list-style: none;
+  text-align: center;
+}
+.links__item:not(:first-child):before {
+  content: "or";
+  display: block;
+  margin-top: -12px;
+  color: rgba(0,0,0,0.5);
+}
+li.features__item {
+  padding: 24px 0;
+  list-style: none;
+}
+.copy {
+  margin: 0;
+  font-size: 0.875em;
+  line-height: 1.6em;
+  color: rgba(0,0,0,0.5);
+}
+.copy .link_text:not(:hover)>.link__inner {
+  text-decoration: none;
+}
+.section_footer {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 24px;
+  margin-top: 24px;
+  padding-bottom: 48px;
+}

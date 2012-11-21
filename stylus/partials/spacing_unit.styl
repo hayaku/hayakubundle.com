@@ -1,6 +1,9 @@
 // Setting the spacing unit
 //   Can be used as `2*su` — almost like normal units, but with asteriks.
-su = 28px
+su ?= 1.375em
+
+if ie and unit(su) == 'rem'
+  su = 16px*su
 
 // Shortcuts to the common spacing units
 $large  = $l  = su * 2

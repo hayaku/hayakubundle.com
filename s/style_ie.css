@@ -159,7 +159,7 @@ body {
   pointer-events: none;
 }
 @media (min-width: 548px) {
-  & {
+  body {
     overflow-x: hidden;
   }
 }

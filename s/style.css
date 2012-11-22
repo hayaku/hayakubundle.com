@@ -130,6 +130,11 @@ body {
   left: 0;
   z-index: -1;
 }
+@media (max-width: 548px) {
+  .fork {
+    display: none;
+  }
+}
 .fork > .link {
   display: block;
   padding: 10px 40px;

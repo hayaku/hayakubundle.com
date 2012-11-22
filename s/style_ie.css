@@ -27,11 +27,6 @@ body {
   color: #333;
   background: #fff;
 }
-body:before,
-body:after {
-  content: "";
-  display: table;
-}
 .link {
   cursor: pointer;
   color: #0c56ff;
@@ -141,9 +136,6 @@ body {
 .fork > .link:hover {
   background: #f40b00;
 }
-body {
-  overflow-x: hidden;
-}
 .debug body:after {
   content: "";
   position: absolute;
@@ -160,6 +152,11 @@ body {
   background: -ms-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 1px, transparent 0, transparent 24px);
   background: linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 1px, transparent 0, transparent 24px);
   pointer-events: none;
+}
+@media (min-width: 548px) {
+  & {
+    overflow-x: hidden;
+  }
 }
 .section {
   position: relative;
@@ -181,9 +178,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 0 2000px;
-  margin: 0 -2000px;
   background: rgba(0,0,0,0.05);
+}
+@media (min-width: 548px) {
+  .section_features:before {
+    padding: 0 2000px;
+    margin: 0 -2000px;
+  }
 }
 h1,
 h2,

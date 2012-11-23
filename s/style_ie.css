@@ -159,7 +159,7 @@ body {
   pointer-events: none;
 }
 @media (min-width: 548px) {
-  body {
+  html {
     overflow-x: hidden;
   }
 }
@@ -241,4 +241,27 @@ li.features__item {
   padding-top: 24px;
   margin-top: 24px;
   padding-bottom: 48px;
+}
+.abbr {
+  line-height: 1.1em;
+  position: relative;
+  display: inline;
+  zoom: 1;
+  padding: 1px 0.5em;
+  margin: 0 2px;
+  overflow: hidden;
+  color: #000;
+  background: rgba(0,0,0,0.15);
+}
+.abbr:before {
+  float: right;
+  content: attr(title);
+}
+.abbr:after {
+  content: " ⇥ ";
+  display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  margin: -4px 4px -1px;
+  color: rgba(0,0,0,0.6);
 }
